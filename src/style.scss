@@ -1,0 +1,255 @@
+$appBackgroundColor: #87b5b5;
+$headerBackgroundColor: #49a3a2;
+$editorBackgroundColor: #c0d8d8;
+$main-font-family: "lato",sans-serif;
+$header-font-size: 1.1rem;
+
+@mixin include-shadow() {
+  box-shadow: 2px 2px 20px #000;
+}
+@mixin include-border() {
+  border: 1px solid black;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+#app-background {
+  background-color: $appBackgroundColor;
+  overflow: hidden;
+  font-family: "Georgia", sans-serif;
+}
+
+#previewer-header, #editor-header {
+  height: 30px;
+  justify-items: center;
+  align-items: center;
+  
+  > * {
+    position: relative;
+    top: 3px;
+  }
+}
+
+#editor-header {
+  width: 600px;
+  
+}
+
+#previewer-header {
+  width: 900px;
+}
+
+#editor-container, #previewer-container {
+  margin: 0 auto;
+}
+
+#editor-container {
+  width: 600px;
+  #editor {
+  width: inherit;
+}
+}
+
+#previewer-container {
+  width: 900px;
+  #preview {
+  width: inherit;
+  overflow: hidden;
+  padding-left: 20px;
+}
+}
+//note that editor height is handled in .min-editor and .max-editor.
+#editor, #preview {
+  background-color: $editorBackgroundColor;
+  @include include-border();
+  @include include-shadow();
+  position: relative;
+  z-index: 0;
+}
+
+#editor {
+  padding-left: 10px;
+}
+
+.header {
+  text-align: left;
+  background-color: $headerBackgroundColor;
+  @include include-border();
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  box-shadow: 2px 0.5px 10px black;
+  font-size: $header-font-size;
+  font-weight: bold;
+}
+
+.fa-free-code-camp {
+  text-decoration: underline black 1px;
+  padding-right: 2px;
+  padding-left: 10px;
+}
+
+.max-buttons {
+  background-color: inherit;
+  border: none;
+  font-size: 1rem;
+  float: right;
+  &:hover {
+    color: lighten($headerBackgroundColor,35%);
+    cursor: pointer;
+  }
+  
+  
+  
+  
+}
+
+// editor height is handled below
+.max-editor {
+  height: 95vh;
+  resize: none;
+  outline: none;
+}
+.min-editor {
+  min-height: 200px;
+  resize: vertical;
+  outline: none;
+  margin-bottom: -10px;
+}
+
+#preview {
+  h1 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid black;
+  }
+  h2 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid black;
+    
+  }
+  h3 {
+    font-size: 1.4rem;
+    
+    
+  }
+  code {
+    background-color: #fafafa;
+    font-weight: bold;
+    
+  }
+  
+  pre {
+    background-color: #444;
+    display: block;
+    color: lighten(green,20%);
+    text-shadow: 1px 1px black;
+    margin-right: 8px;
+    code {
+      background-color: inherit;
+    }
+    
+  }
+  
+  blockquote {
+    color: #555;
+    margin-left: 20px;
+    border-left: 4px solid #555;
+    font-weight: bold;
+    p {
+      padding-left: 5px;
+    }
+  }
+  
+  table {
+    
+    thead {
+      border: 2px solid black;
+      th {
+        border: 2px solid black;
+      }
+    }
+    
+    tbody {
+      border: 2px solid black;
+      tr {
+        border: 2px solid black;
+        td {
+        border: 2px solid black;
+      }
+      } 
+    }
+  }
+  
+  img {
+    max-width: 30%;
+      
+  }
+  
+  a {
+    color: purple;
+  }
+  
+  img {
+    max-width: 30%;
+  }
+  
+}
+
+
+@media (max-width: 950px) {
+  
+  #editor-header {
+    width: 75%;
+    min-width: 200px;
+    margin: 0 auto;
+    margin-top:5px;
+  }
+  
+  
+  #editor-container {
+    width: 75%;
+    min-width: 300px;
+    min-height: 350px;
+    position: relative;
+    
+    
+    
+  }
+  
+  #editor {
+    margin: 0 auto;
+    left: 12.5%;
+    
+  }
+  
+  
+  #previewer-header {
+    width: 90%;
+    min-width: 250px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  
+  #previewer-container {
+    width: 90%;
+    min-width: 350px;
+    position: relative;
+    
+  }
+  
+  #preview {
+    left: 5%;
+  }
+  .max-editor {
+  height: 95vh;
+  resize: none;
+  outline: none;
+}
+  .min-editor {
+  min-height: 300px;
+  resize: vertical;
+  outline: none;
+  margin-bottom: -10px;
+}
+}

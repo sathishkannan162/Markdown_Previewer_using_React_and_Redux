@@ -1,0 +1,234 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+#attribution {
+  text-align: left;
+  font-size: smaller;
+}
+
+h1, #attribution {
+  color: black;
+  background-color: #87b5b5;
+  margin: 0 auto;
+}
+
+#attribution a {
+  color: darkblue;
+}
+
+#app-background {
+  background-color: #87b5b5;
+  overflow: hidden;
+  font-family: "Georgia", sans-serif;
+}
+
+#previewer-header, #editor-header {
+  height: 30px;
+  justify-items: center;
+  align-items: center;
+}
+#previewer-header > *, #editor-header > * {
+  position: relative;
+  top: 3px;
+}
+
+#editor-header {
+  width: 600px;
+}
+
+#previewer-header {
+  width: 900px;
+}
+
+#editor-container, #previewer-container {
+  margin: 0 auto;
+}
+
+#editor-container {
+  width: 600px;
+}
+#editor-container #editor {
+  width: inherit;
+}
+
+#previewer-container {
+  width: 900px;
+}
+#previewer-container #preview {
+  width: inherit;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+#editor, #preview {
+  background-color: #c0d8d8;
+  border: 1px solid black;
+  box-shadow: 2px 2px 20px #000;
+  position: relative;
+  z-index: 0;
+}
+
+#editor {
+  padding-left: 10px;
+}
+
+.header {
+  text-align: left;
+  background-color: #49a3a2;
+  border: 1px solid black;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  box-shadow: 2px 0.5px 10px black;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fa-free-code-camp {
+  text-decoration: underline black 1px;
+  padding-right: 2px;
+  padding-left: 10px;
+}
+
+.max-buttons {
+  background-color: inherit;
+  border: none;
+  font-size: 1rem;
+  float: right;
+}
+.max-buttons:hover {
+  color: #bde1e1;
+  cursor: pointer;
+}
+
+.max-editor {
+  height: 95vh;
+  resize: none;
+  outline: none;
+}
+
+.min-editor {
+  min-height: 200px;
+  resize: vertical;
+  outline: none;
+  margin-bottom: -10px;
+}
+
+#preview h1 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid black;
+}
+#preview h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid black;
+}
+#preview h3 {
+  font-size: 1.4rem;
+}
+#preview h4 {
+  font-size: 1.2rem;
+}
+#preview code {
+  background-color: #fafafa;
+  font-weight: bold;
+}
+#preview pre {
+  background-color: #444;
+  display: block;
+  color: #00e600;
+  text-shadow: 1px 1px black;
+  margin-right: 8px;
+}
+#preview pre code {
+  background-color: inherit;
+}
+#preview blockquote {
+  color: #555;
+  margin-left: 20px;
+  border-left: 4px solid #555;
+  font-weight: bold;
+}
+#preview blockquote p {
+  padding-left: 5px;
+}
+#preview table thead {
+  border: 2px solid black;
+}
+#preview table thead th {
+  border: 2px solid black;
+}
+#preview table tbody {
+  border: 2px solid black;
+}
+#preview table tbody tr {
+  border: 2px solid black;
+}
+#preview table tbody tr td {
+  border: 2px solid black;
+}
+#preview img {
+  max-width: 30%;
+}
+#preview a {
+  color: purple;
+}
+#preview img {
+  max-width: 30%;
+}
+
+@media (max-width: 950px) {
+  #editor-header {
+    width: 75%;
+    min-width: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  #editor-container {
+    width: 75%;
+    min-width: 300px;
+    min-height: 350px;
+    position: relative;
+  }
+
+  #editor {
+    margin: 0 auto;
+    left: 12.5%;
+  }
+
+  #previewer-header {
+    width: 90%;
+    min-width: 250px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  #previewer-container {
+    width: 90%;
+    min-width: 350px;
+    position: relative;
+  }
+
+  #preview {
+    left: 5%;
+  }
+
+  .max-editor {
+    height: 95vh;
+    resize: none;
+    outline: none;
+  }
+
+  .min-editor {
+    min-height: 300px;
+    resize: vertical;
+    outline: none;
+    margin-bottom: -10px;
+  }
+}
