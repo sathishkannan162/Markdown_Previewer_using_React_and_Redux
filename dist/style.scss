@@ -1,6 +1,6 @@
-$appBackgroundColor: #87b5b5;
-$headerBackgroundColor: #49a3a2;
-$editorBackgroundColor: #c0d8d8;
+$appBackgroundColor: #E4AFB0;
+$headerBackgroundColor: #9A7787;
+$editorBackgroundColor: #FED7BF;
 $main-font-family: "lato",sans-serif;
 $header-font-size: 1.1rem;
 
@@ -26,12 +26,12 @@ $header-font-size: 1.1rem;
 
 #heading , #attribution {
   color: black;
-  background-color: #87b5b5;
+  background-color: $appBackgroundColor;
   margin: 0 auto;
 }
 
 #attribution a {
-  color: darkblue;
+  color: rgb(81, 0, 81);
 }
 
 
