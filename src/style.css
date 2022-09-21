@@ -14,16 +14,16 @@
 
 #heading, #attribution {
   color: black;
-  background-color: #E4AFB0;
+  background-color: #87b5b5;
   margin: 0 auto;
 }
 
 #attribution a {
-  color: rgb(81, 0, 81);
+  color: darkblue;
 }
 
 #app-background {
-  background-color: #E4AFB0;
+  background-color: #87b5b5;
   overflow: hidden;
   font-family: "Georgia", sans-serif;
 }
@@ -67,7 +67,7 @@
 }
 
 #editor, #preview {
-  background-color: #FED7BF;
+  background-color: #c0d8d8;
   border: 1px solid black;
   box-shadow: 2px 2px 20px #000;
   position: relative;
@@ -80,7 +80,7 @@
 
 .header {
   text-align: left;
-  background-color: #9A7787;
+  background-color: #49a3a2;
   border: 1px solid black;
   margin: 0;
   position: relative;
@@ -105,7 +105,7 @@
   float: right;
 }
 .max-buttons:hover {
-  color: #e6dde1;
+  color: #bde1e1;
   cursor: pointer;
 }
 
