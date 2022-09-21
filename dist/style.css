@@ -1,7 +1,7 @@
 *, ::before, ::after {
   box-sizing: border-box;
 }
-h1{
+#heading {
   font-size: 2rem;
   text-align: center;
 }
@@ -11,7 +11,7 @@ h1{
   font-size: smaller;
 }
 
-h1, #attribution {
+#heading , #attribution {
   color: black;
   background-color: #87b5b5;
   margin: 0 auto;
